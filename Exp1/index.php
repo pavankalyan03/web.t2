@@ -73,10 +73,10 @@
                 <input type="submit" value="Upload Image" name="submit">
             </form>
 
-            <?php
+    <?php
     $targetDirectory = "uploads/";
     $uploadOk = 1;
-    
+                
     if(isset($_POST["submit"])) {
         if (!file_exists($targetDirectory)) {
             mkdir($targetDirectory, 0777, true); 
